@@ -1,0 +1,13 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "SWAPI",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
