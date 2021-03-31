@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { TranslateModule } from '@ngx-translate/core';
+import { MaterialModule } from '../shared/material.module';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { TranslateModule } from '@ngx-translate/core';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    TranslateModule.forChild()
+    TranslateModule.forChild(),
+    MaterialModule
   ],
   declarations: [HomePage]
 })

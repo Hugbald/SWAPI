@@ -1,5 +1,9 @@
 {
     "Home": {
-        "TitleText": "SWAPI l'incroyable API Star Wars !"
+        "TitleText": "SWAPI l'incroyable API Star Wars !",
+        "button": {
+            "people":"Personnages",
+            "movies": "Films"
+        }
     }
 }
