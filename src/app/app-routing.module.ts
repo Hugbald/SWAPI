@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { PeopleResolver } from './core/resolver/people.resolver';
 
 const routes: Routes = [
   {
@@ -13,7 +14,10 @@ const routes: Routes = [
   },
   {
     path: 'people',
-    loadChildren: () => import('./pages/people/people.module').then( m => m.PeoplePageModule)
+    loadChildren: () => import('./pages/people/people.module').then( m => m.PeoplePageModule),
+    resolve: {
+      peoples: PeopleResolver
+    }
   },
   {
     path: 'movies',
